@@ -1,0 +1,1 @@
+The original implementation of Ext.layout.CardLayout does not check wether an "active item" was successfully hidden (which might not be the case if any of the listeners attached to the item's beforehide-event returned "false"). This class overrides the "setActiveItem"-method and sets only the chosen item as "active", if the previously active item was successfully hidden.
